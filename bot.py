@@ -6,12 +6,13 @@ import time
 
 class UserManager:
     USERS = {
-        1074907636: {"group": "FullRcon", "mc_nick": "SALIEVVS", "servers": ["hub1", "surv1"]},
-        1050553053: {"group": "FullRcon", "mc_nick": "1dle0ne", "servers": ["hub1", "surv1"]},
-        634566442: {"group": "FullRcon", "mc_nick": "Igaseyt", "servers": ["hub1", "surv1"]},
-        831395934: {"group": "FullRcon", "mc_nick": "Kind_lion", "servers": ["hub1", "surv1"]},
-        738262320: {"group": "FullRcon", "mc_nick": "dimas2030", "servers": ["surv1"]},
-        740769275: {"group": "FullRcon", "mc_nick": "MrLopstar", "servers": ["hub1", "surv1"]},
+        # Замените еденицы на VK ID Пользователя
+        111111111: {"group": "FullRcon", "mc_nick": "SALIEVVS", "servers": ["hub1", "surv1"]},
+        111111111: {"group": "FullRcon", "mc_nick": "1dle0ne", "servers": ["hub1", "surv1"]},
+        111111111: {"group": "FullRcon", "mc_nick": "Igaseyt", "servers": ["hub1", "surv1"]},
+        111111111: {"group": "FullRcon", "mc_nick": "Kind_lion", "servers": ["hub1", "surv1"]},
+        111111111: {"group": "FullRcon", "mc_nick": "dimas2030", "servers": ["surv1"]},
+        111111111: {"group": "FullRcon", "mc_nick": "MrLopstar", "servers": ["hub1", "surv1"]},
         # ...другие пользователи...
     }
 
@@ -28,8 +29,8 @@ class UserManager:
 
 class RconManager:
     SERVERS = {
-        "surv1": {"host": "157.180.4.105", "port": 41343, "password": "b3eguyrgy56754gazscw"},
-        "hub1": {"host": "157.180.4.105", "port": 41311, "password": "by3uegdsdcxhgd73"},
+        "surv1": {"host": "127.0.0.1", "port": 25567, "password": "RCON PASSWORD"},
+        "hub1": {"host": "127.0.0.1", "port": 25568, "password": "RCON PASSWORD"},
         # ...другие сервера...
     }
 
@@ -118,6 +119,7 @@ class VKBot:
                 time.sleep(5)
 
 if __name__ == "__main__":
-    vk_token = "vk1.a.o3D1eRdVhe4Rycg4XFPvPgFkGRdi4vUEXMfeyxwVf0EXoO_GgCXyiLb2-9wLXzMttdmRJhPlEGyhw_i4hRyIJkaV0XqKvwHUv1EYbAOUV6Oe0nNYcLYINvadCME0608jyLyFMjmdCFMCCcRqX_bDEKLVyKl7CMOuRYX2VK8ySWFLDkGm7wY75UIymMHB1oTzk62W8OGh6yBW0bzowWXXng"
+    vk_token = "ВК ТОКЕН СООБЩЕСТВА"
     bot = VKBot(vk_token)
+
     bot.run()
